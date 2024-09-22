@@ -17,7 +17,7 @@
 
 .exploding-text span {
     display: inline-block;
-    transition: transform 0.7s ease, opacity 0.7s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .exploding-text span.exploded {

@@ -1,9 +1,10 @@
-#threeCanvas {
-    width: 100vw;  /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    display: block; /* Remove any unwanted space from the canvas */
+@media only screen and (max-width: 600px) {
+    #threeCanvas {
+        width: 100vw;  /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        display: block; /* Remove any unwanted space from the canvas */
+    }
 }
-
 #explodingText {
     display: inline-block;
     font-size: 2em;

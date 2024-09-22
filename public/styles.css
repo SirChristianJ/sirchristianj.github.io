@@ -1,0 +1,30 @@
+#threeCanvas {
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: block; /* Remove any unwanted space from the canvas */
+}
+
+#explodingText {
+    display: inline-block;
+    font-size: 2em;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px beige;
+    cursor: pointer;
+    position: relative;
+    user-select: none; /* Prevent text selection */
+    
+}
+
+.exploding-text span {
+    display: inline-block;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.exploding-text span.exploded {
+    transform: translate(
+        calc(20px - 40px * var(--randomX)),
+        calc(20px - 40px * var(--randomY))
+    );
+    opacity: 0;
+}
+
